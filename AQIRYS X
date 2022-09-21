@@ -541,7 +541,14 @@ function library:CreateWindow(WName)
 		end)
 		ui:Resize()
 	end
-	
+	pcall(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+        	Title = "AQIRYS X",
+        	Text = "Made by WEFESR#7988",
+        	Duration = 5
+   	 	})
+	end)
+	return ui
 end
 
 return library
