@@ -541,8 +541,7 @@ function library:CreateWindow(WName)
 		end)
 		ui:Resize()
 	end
-	pcall(function()
-	return ui
+	
 end
 
 return library
